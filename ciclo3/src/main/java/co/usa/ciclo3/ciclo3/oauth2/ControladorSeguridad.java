@@ -29,7 +29,7 @@ public class ControladorSeguridad extends WebSecurityConfigurerAdapter {
         ).exceptionHandling(e -> e
                 .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED))
         ).oauth2Login()
-              .defaultSuccessUrl("http://168.138.144.46/retosFront/Categorias.html", true);         
+              .defaultSuccessUrl("http://129.151.115.73/retosFront-Johan/Categorias.html", true);         
         
        http.cors().and().csrf().disable(); 
 
